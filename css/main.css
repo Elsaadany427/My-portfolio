@@ -201,7 +201,176 @@ ul {
 
 
 /*----------------
-    Media Query 
+    Recent-Work
+-----------------*/
+
+.Recent-Work {
+    text-align: center;
+}
+
+.Recent-Work .content .projectExample .image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    height: 182px;
+}
+
+.Recent-Work .content .projectExample .image figcaption {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    color: var(--black-000);
+    z-index: 1;
+    height: 42px;
+    flex-direction: column;
+}
+
+.Recent-Work .content .projectExample .image figcaption,
+.Recent-Work .content .projectExample .image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: .45s ease-in-out;
+    transition: .45s ease-in-out;
+}
+
+.Recent-Work .content .projectExample .image .overlay {
+    background-color: var(--bg-dark);
+}
+
+.Recent-Work .content .projectExample .image:hover .overlay,
+.Recent-Work .content .projectExample .image:hover figcaption {
+    opacity: 1;
+}
+
+.Recent-Work .content .projectExample figcaption h1 {
+    margin-bottom: 1.8rem;
+    color: var(--black-000);
+}
+
+.Recent-Work .content .projectExample .image figcaption .Project-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 12px;
+    color: var(--black-000);
+    text-decoration: none;
+    line-height: 1.5;
+    white-space: nowrap;
+    height: 42px;
+}
+
+.Recent-Work .content .projectExample .image figcaption .Project-button span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.Recent-Work .content .projectExample .image figcaption .Project-button span.icon svg {
+    font-size: 20px;
+    width: 10px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+
+/*----------------
+    cotact me 
+-----------------*/
+
+.contact-me {
+    border-top: 1px solid #dbdbdb;
+}
+
+.contact-me .contact-img {
+    text-align: center;
+    top: -53px;
+    position: relative;
+}
+
+.contact-me .contact-img img {
+    width: 100px;
+}
+
+.contact-me form button {
+    margin-left: 40% !important;
+}
+
+.contact-me form label {
+    color: #A3A3A3;
+}
+
+.contact-me form select {
+    background-color: #fff;
+}
+
+.contact-me form input,
+.contact-me form select {
+    border-color: #E6ECF8 !important;
+    color: #7c808d !important;
+    box-shadow: none;
+    height: 3.5em;
+    font-weight: 300;
+}
+
+
+/*----------------
+    Do-this
+-----------------*/
+
+.Do-this {
+    background-color: var(--bg-dark);
+    padding: 3.5rem 1.25rem;
+    text-align: center;
+    color: var(--black-000);
+    border-radius: 29px;
+    position: relative;
+    top: 113px;
+}
+
+
+/*----------------
+    Footer
+-----------------*/
+
+footer {
+    background-color: var(--main-color);
+    padding: 8rem 1.5rem 4rem;
+    color: var(--black-000);
+}
+
+footer .footer-img {
+    margin-bottom: 50px;
+}
+
+footer p {
+    margin-bottom: 50px;
+}
+
+footer svg {
+    margin-left: 20px;
+}
+
+footer .content {
+    text-align: center;
+}
+
+footer .content img {
+    width: 52px
+}
+
+
+/*----------------
+    Media Query Do-this
 -----------------*/
 
 
@@ -214,6 +383,9 @@ ul {
     .is-size-3-desktop {
         font-size: 2rem !important
     }
+    .Recent-Work .content .projectExample .image {
+        height: 200px;
+    }
 }
 
 
@@ -222,6 +394,9 @@ ul {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .is-size-3-desktop {
         font-size: 1.5rem !important
+    }
+    .Recent-Work .content .projectExample .image {
+        height: 159px;
     }
 }
 
@@ -232,6 +407,9 @@ ul {
     .is-size-4-tablet {
         font-size: 1.2rem !important
     }
+    .Recent-Work .content .projectExample .image {
+        height: 186px;
+    }
 }
 
 
@@ -240,6 +418,9 @@ ul {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .is-size-5-mobile {
         font-size: 1rem !important
+    }
+    .Recent-Work .content .projectExample .image {
+        height: 250px;
     }
 }
 
@@ -252,6 +433,9 @@ ul {
     }
     .is-size-5-p-mobile {
         font-size: 1rem !important
+    }
+    .Recent-Work .content .projectExample .image {
+        height: 190px;
     }
 }
 
